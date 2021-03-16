@@ -1,0 +1,6 @@
+<resources>
+    <style name="CustomAppTheme_TextInputLayout" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:textColorHint">@color/lib_detail</item>
+    </style>
+
+</resources>

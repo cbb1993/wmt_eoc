@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cbb.wmt_eoc">
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:name=".MyApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.cbb.wmt_eoc.page.login.LoginActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cbb.wmt_eoc.page.main.MainActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.cbb.wmt_eoc.page.check.StartCheckActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filte"/>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".page.error_report.ReportErrorActivity" />
+        <activity android:name=".page.remind.LeftRemindActivity" />
+        <activity android:name=".page.bind.BindLocationActivity" />
+        <activity android:name=".page.personal.PersonalActivity" />
+        <activity android:name=".page.schedule.ScheduleActivity" />
+        <activity android:name=".page.error_record.ErrorRecordActivity" />
+        <activity android:name=".page.error_info.ErrorInfoActivity" />
+        <activity android:name=".page.check.SelectTaskActivity" />
+        <activity android:name=".page.check.ApplyStopTaskActivity" />
+
+
+    </application>
+
+</manifest>

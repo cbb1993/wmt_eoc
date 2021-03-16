@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lib_white"
+
+    android:fitsSystemWindows="false">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/main_bg_2" />
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/work_space"
+        android:textColor="@color/lib_white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="290dp"
+        android:layout_height="151dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/main_bg_1" />
+
+
+    <RelativeLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/shape_solid_blue_6_r">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="141dp"
+        android:text="账号：1525690478"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_start_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="260dp"
+        android:drawableTop="@mipmap/start_check"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/start_check"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_error_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="260dp"
+        android:drawableTop="@mipmap/error_report"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/error_report"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_left_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="405dp"
+        android:drawableTop="@mipmap/left_remind"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/left_remind"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_bind_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="405dp"
+        android:drawableTop="@mipmap/bind_location"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/bind_location"
+        android:textSize="20sp" />
+</RelativeLayout>

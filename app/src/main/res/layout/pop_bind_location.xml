@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/view_bg"
+            android:alpha="0.4"
+            android:background="@color/lib_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_solid_white_6_r"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_build"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="90dp"/>
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_solid_blue_6_r"
+                android:textColor="@color/lib_white"
+                android:text="提交"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

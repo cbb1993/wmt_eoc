@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lib_white">
+
+    <com.cbb.baselib.view.TitleView
+        android:background="@color/lib_white"
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        title:left_img_visible="true"
+        title:title_text="绑定点位"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@mipmap/banner"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"/>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/lib_red"
+        android:text="提示：绑定前请将手机靠近NFC卡读取信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/lib_black"
+            android:text="NFC ID："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_nfc_id"
+            android:textColor="@color/lib_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_marginTop="100dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/lib_white"
+        android:text="@string/to_bind"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/shape_solid_blue_6_r"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"/>
+</LinearLayout>
